@@ -1,0 +1,155 @@
+body, label, .button, .input-field {
+    font: large 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    position: relative;
+    width: 95%;
+    background-color: antiquewhite
+}
+
+#page-container, .button, .input-field {
+    background-color: white;
+    border: solid black
+}
+
+#page-container {
+    width: 70%;
+    margin: 5% auto;
+    padding: 3% 10%
+}
+
+#article-list, #content {
+    border-style: solid none;
+    padding: 2% 0%;
+}
+
+.article {
+    position: relative;
+    margin: 2% 0%;
+    padding: 2% 1%;
+    border: 1px dotted;
+    transition: background-color 500ms linear
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: blue;
+    text-decoration: none
+}
+
+.article-actions {
+    display: inline
+}
+
+.article-delete {
+    color: red;
+    cursor: pointer
+}
+
+.article-actions > * {
+    margin-left: 15px
+}
+
+label {
+    font-weight: bold
+}
+
+.input-field {
+    margin: 10px 0px;
+    width: 100%
+}
+
+textarea {
+    height: 300px;
+    resize: none
+}
+
+#button-container {
+    position: relative;
+    margin: 5% 0%
+}
+
+#access-list {
+   border: solid;
+   padding: 5% 15%;
+   margin-bottom: 10%
+}
+
+.access-entry > * {
+    display: inline-block
+}
+
+.access-entry {
+    position: relative;
+    padding: 2% 10%;
+    border: dotted;
+    margin-bottom: 1%
+}
+
+.access, #access-title {
+    position: absolute;
+    border-left: dotted;
+    padding-left: 5%
+}
+
+.access {
+    right: 30%
+}
+
+#access-title {
+    right: 14%
+}
+
+#generate-referral {
+    border: solid;
+    padding: 5% 10% 8%
+}
+
+#referral-link {
+    visibility: hidden;
+    margin-top: 2%
+}
+
+#page-number {
+    display: inline-block;
+    margin: 5% 0%
+}
+
+#page-number {
+    display: inline-block;
+    margin: 5% 0%
+}
+
+.button {
+    display: inline-block;
+    padding: 2%;
+    margin: 2% 2% 2% 0%;
+    transition: background-color 300ms linear
+}
+
+#back-button, #create-button {
+    position: absolute;
+    right: 0%;
+    margin-right: 0%
+}
+
+.button:hover, .article:hover {
+    background-color: lightblue
+}
+
+#save-button:hover {
+    background-color: lightgreen;
+}
+
+@media (max-width: 1050px) {
+    #article-actions {
+        position: relative
+    }
+}
+
+@media (max-width: 600px) {
+    #previous-button ~ #next-button ~ #create-button {
+        position: relative;
+        display: block
+    }
+}
